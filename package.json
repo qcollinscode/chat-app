@@ -1,19 +1,44 @@
 {
   "name": "chatapp",
   "version": "1.0.0",
-  "description": "A simple chat app",
+  "description": "Basic chat app",
   "main": "app.js",
-  "dependencies": {
-    "ejs": "^2.5.6",
-    "express": "^4.15.2",
-    "http": "0.0.0",
-    "socket.io": "^1.7.3"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "gulp"
   },
+  "browserslist": "> 5%",
   "author": "Q Collins",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.23.1",
+    "babel-preset-es2015": "^6.22.0",
+    "body-parser": "^1.16.1",
+    "browser-sync": "^2.18.8",
+    "cookie-parser": "^1.4.3",
+    "del": "^2.2.2",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-minify": "0.0.15",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-watch": "^4.3.11",
+    "merge-stream": "^1.0.1",
+    "mongodb": "^2.2.24",
+    "mongoose": "^4.8.5",
+    "morgan": "^1.8.1",
+    "request": "^2.79.0",
+    "socket.io": "^1.7.3",
+    "socket.io-client": "^1.7.3"
+  },
+  "devDependencies": {
+    "gulp-nodemon": "^2.2.1",
+    "nodemon": "^1.10.0"
+  }
 }

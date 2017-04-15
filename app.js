@@ -1,19 +1,27 @@
 var express = require('express'),
     app = express(),
     server = require('http').createServer(app),
-    io = require('socket.io').listen(server);
+    io = require('socket.io').listen(server),
+    request = require("request"),
+    bodyParser = require("body-parser");
 
 users = [];
 connections = [];
 
-app.use(express.static(__dirname + '/src/assets'));
+/** Static Directory **/
+ app.use(bodyParser.urlencoded({extended: true}), express.static("public"));
+
+/** View Engine **/
+ app.set("view engine", "ejs");
+
+// app.use(express.static(__dirname + '/public'));
 
 server.listen(process.env.PORT || 3000, process.env.IP, function() {
     console.log("Server is running....");
 });
 
 app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/src/index.html');
+    res.render('home');
 });
 
 

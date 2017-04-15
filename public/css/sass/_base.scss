@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    color: #34495e;
+    body {
+        @extend html;
+        padding-top: 30px;
+        background: url('../img/abstract.jpg');
+        background-repeat: no-repeat;
+        //background: rgba(30, 30, 30, 1);
+    }
+}
+
+label {
+    color: white;
+}
+
+input[type=text], textarea {
+    background: lightgrey!important;
+}
+
+input[type=submit] {
+    border: 2px solid lightgrey;
+    background: transparent;
+    transition: 0.1s ease-in-out;
+}
+
+input[type=submit]:hover {
+    border: 2px solid lightgrey;
+    background: rgba(100, 100, 100, 0.2);
+}
+
+input[type=submit]:focus {
+    border: 2px solid lightgrey;
+    background: transparent;
+}
+
+#chat {
+    height: 50em;
+    overflow-y: auto;
+    display: block;
+    padding-right: 0.8em;
+}
+
+.username {
+    color: green;
+    font-weight: 700;
+    margin-right: 0.4em;
+}
+
+.well, .list-group-item {
+    background: rgba(30, 30, 30, 1);
+    color: white;
+    border: none;
+    box-shadow: none;
+}
+
+.well {
+    h3 {
+        margin: 0;
+        font-size: 2em;
+    }
+    .list-group-item {
+        font-size: 1.4em;
+        position: relative;
+        left: 1em;
+        user-select: none;
+        cursor: default;
+        &:before {
+            font-family: FontAwesome;
+            content: '\f007';
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            color: green;
+            left: -0.3em;
+            border-radius: 50%;
+
+        }
+    }
+}
+
+.message {
+    font-size: 1.2em;
+    position: relative;
+    border: 2px solid lightgrey;
+    &:after {
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    p {
+        width: 100%;
+    }
+
+}
+
+#messageArea {
+    display: none;
+    box-shadow: none;
+}
+
+textarea {
+    resize: none;
+    max-height: 5em!important;
+    width:100%!important;
+    margin-top: 1em;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $mainFontFamily!important;
+}
+
+p, span, div {
+    font-family: $secondaryFontFamily!important;
+}

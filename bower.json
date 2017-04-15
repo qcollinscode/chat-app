@@ -1,6 +1,6 @@
 {
-  "name": "chatapp",
-  "description": "A simple chat app",
+  "name": "camp",
+  "description": "",
   "main": "app.js",
   "authors": [
     "Q Collins"
@@ -13,5 +13,10 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "smoothscroll-for-websites": "^1.4.6",
+    "socket.io": "^1.7.3"
+  }
 }
