@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="userFormArea" class="row">
+            <div class="col-md-12">
+                <form action="" id="userForm">
+                    <div class="form-group">
+                        <label for="">Enter Username</label>
+                        <input name="username" type="text" class="form-control" id="username" autocomplete="off" />
+                        <br />
+                        <input type="submit" class="btn btn-primary" value="Login">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="messageArea" class="row">
+            <div class="col-md-4">
+                <div class="well">
+                    <h3>Online Users</h3>
+                    <ul id="users" class="list-group"></ul>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="chat" id="chat"></div>
+                <form action="" id="messageForm">
+                    <div class="form-group">
+                        <label for="">Enter Message</label>
+                        <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
+                        <br />
+                        <input type="submit" class="btn btn-primary" value="Send Message">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/js/jquery.min.js" charset="utf-8" type="application/javascript"></script>
+    <script src="/js/bootstrap.min.js" charset="utf-8" type="application/javascript"></script>
+    <script src="/js/main.js" charset="utf-8" type="application/javascript"></script>
+</body>
+</html>

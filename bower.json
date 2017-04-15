@@ -1,0 +1,17 @@
+{
+  "name": "chatapp",
+  "description": "A simple chat app",
+  "main": "app.js",
+  "authors": [
+    "Q Collins"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
